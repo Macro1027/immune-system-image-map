@@ -1,0 +1,116 @@
+#main {
+    padding: 7% 10%;
+    background-color: rgb(67, 66, 66);
+}
+
+.img {
+    width: 80vw;
+    height: auto;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    position: relative;
+}
+
+.markers {
+    background: rgba(237, 237, 237, 0.7);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgba(255,255,255,.5);
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    animation: ownpulse 3s cubic-bezier(.19,1,.22,1) infinite both;
+    position: relative;
+}
+
+
+.marker__card {
+	background-color: #fefefe;
+	padding: 1.5rem;
+	position: absolute;
+    margin: 0 30%;
+    text-align: center;
+	width: 40%;
+	z-index: 100;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+	animation: fadeInUp;
+	animation-duration: .5s;
+	animation-fill-mode: both;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  
+/* animations */
+@keyframes ownpulse {
+	0% {
+	    -webkit-box-shadow: 0 0 0 0 #fff;
+	    box-shadow: 0 0 0 0 #fff;
+	}
+	50% {
+	    -webkit-box-shadow: 0 0 0 40px rgba(92,112,214,0);
+	    box-shadow: 0 0 0 40px rgba(92,112,214,0);
+	}
+	0% {
+	    -webkit-box-shadow: 0 0 0 0 #fff;
+	    box-shadow: 0 0 0 0 #fff;
+	}
+	50% {
+	    -webkit-box-shadow: 0 0 0 40px rgba(92,112,214,0);
+	    box-shadow: 0 0 0 40px rgba(92,112,214,0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+    opacity: 0;
+	transform: scale3d(.3,.3,.3) translate3d(0,100%,0);
+	-webkit-transform: scale3d(.3,.3,.3);
+    -webkit-transform: translate3d(0,100%,0);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: scale3d(.3,.3,.3) translate3d(0,100%,0);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+}
+
+.hidden {
+    display: none;
+}
