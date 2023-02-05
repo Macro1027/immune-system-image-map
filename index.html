@@ -6,29 +6,94 @@
     <title>White blood cells</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+    <section id="header">
+      <h1 class="text-header" data-aos="fade-up">The Immune System is a complicated battlefield.</h1>
+        <h1 class="text-subheader" data-aos="fade-up" data-aos-delay="1000">This illustrates the basics.</h1>
+    </section>
     <section id="main">
-        <h1 class="text-white">Hello, world!</h1>
-        <div class="container">
-            <img src="images/chessboard.png" alt="chessboard" class="img" usemap="immune-map">
-            <div class="markers" tabindex="0" style="grid-column: 25; grid-row: 15;"></div>
-            <div class="marker__card hidden">
-                <p>hello</p>
-            </div>
-    
-            <div class="markers" tabindex="0" style="grid-column: 15; grid-row: 6;"></div>
-            <div class="marker__card hidden">
-                <p>world</p>
-            </div>
+      <div class="container" style="background-image: url(images/gameboard.png);">
+        <!-- MARKER 1 - MAGE -->
+        <div class="markers" tabindex="0" style="grid-column: 19; grid-row: 12;"></div>
+        <div class="marker__card hidden">
+          <!-- Mage title -->
+          <h1 class="title">Mage - Lymphocyte</h1>
+          <img src="images/icons/icResearch.png" class="icons" alt="mage-icon">
+          <div class="card-main">
+            <img src="images/mage.png" class="image" alt="mage">
+            <!-- Mage skills -->
+            <h4 class="card-text">Skills:</h4>
+            <!-- skill 1 - antibodies -->
+            <h3 class="card-text" style="color: #50f750;">Cast: Spawn</h3>
+            <p><img src="images/mage-antibody.png" class="skill-image" alt="mage-skill"><span>Secretes antibodies, which have a complementary shape to the antigens on the surface of the pathogenic cell. They bind to the antigens and cause them to <strong>clump together</strong> (agglutination).</span></p>
+            <!-- skill 2 - antitoxins -->
+            <h3 class="card-text" style="color: #50f750;">Cast: Relief</h3>
+            <p><img src="images/mage-antitoxin.png" class="skill-image" alt="mage-skill"><span>Antitoxins <strong>neutralise toxins</strong> released by pathogens. These toxins can disrupt normal cellular processes, cause damage to cells and tissues.</span></p>
+          </div>
         </div>
+
+        <!-- MARKER 2 - KNIGHT -->
+        <div class="markers" tabindex="0" style="grid-column: 32; grid-row: 50;"></div>
+        <div class="marker__card hidden">
+          <!-- Knight title -->
+          <h1 class="title">Warrior - phagocyte</h1>
+          <img src="images/icons/icStrenght.png" class="icons" alt="warrior-icon">
+          <div class="card-main">
+            <img src="images/warrior.png" class="image" alt="warrior">
+            <!-- Knight skills -->
+            <h4 class="card-text">Skills:</h4>
+            <!-- skill 1 - bludgeon -->
+            <h3 class="card-text" style="color: #50f750;">Cast: Bludgeon</h3>
+            <p><img src="images/warrior-sword.png" class="skill-image" alt="warrior-skill"><span>Violently "<strong>engulfs and digests</strong> (phagocytosis)" nearby pathogens with its blade. Pathogens are located as phagocytes can detect can detect chemicals produced by pathogenic cells.</span></p>
+            <!-- skill 2 - antitoxins -->
+            <h3 class="card-text" style="color: #50f750;">Cast: Recycle</h3>
+            <p><img src="images/warrior-recycle.png" class="skill-image" alt="warrior-skill"><span>*Less violently "engulfs and digests" <strong>dead or damaged</strong> troops preventing the release of cellular debris and other harmful substances that can damage surrounding tissues and lead to inflammation. </span></p>
+          </div>
+        </div>
+
+        <!-- MARKER 3 -  -->
+        <div class="markers" tabindex="0" style="grid-column: 25; grid-row: 27;"></div>
+        <div class="marker__card hidden">
+          <!-- Archmage title -->
+          <h2 class="title">Archmage - memory cells</h2>
+          <img src="images/icons/icAbundant.png" class="icons" alt="archmage-icon">
+          <div class="card-main">
+            <img src="images/archmage.png" class="image" alt="archmage">
+            <p>(totally not just a larger mage)</p>
+            <!-- Archmage skills -->
+            <h4 class="card-text">Skills:</h4>
+            <p>Same as normal mage</p>
+            <!-- Archmage passives -->
+            <h4 class="card-text">Passives:</h4>
+            <h3 class="card-text" style="color: #50f750;">Memory</h3>
+            <p><img src="images/archmage-memory.png" class="skill-image" alt="archmage-skill"><span>Due to having previously encounted the pathogen, memory cells produce much larger quantities of the required antibody in a much shorter time.</span></p>
+          </div>
+        </div>
+
+        <!-- MARKER 4 -  -->
+        <div class="markers" tabindex="0" style="grid-column: 34; grid-row: 29;"></div>
+        <div class="marker__card hidden">
+          <!-- Hijacked title -->
+          <h2 class="title">Hijacked</h2>
+          <div class="card-main">
+            <img src="images/hijacked.png" class="image" alt="warrior">
+            <p>Troop has been infected by a Ghoul (virus)</p>
+            <!-- Hijacked effects -->
+            <h4 class="card-text">Effects:</h4>
+            <h3 class="card-text" style="color: #fc1e1e;">Hijacked</h3>
+            <p><img src="images/hijacked-virus.png" class="skill-image" alt="warrior-skill"><span>Hijacks the host troop's ability to <strong>replicate itself</strong>. This can cause the host to function abnormally or die, and can also lead to the release of new viral particles that can infect other cells.</span></p>
+          </div>
+        </div>
+
+      </div>
     </section>
     <div class="overlay hidden"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
-</html>
-<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-</body>
+    <script>AOS.init();</script>
+  </body>
 </html>
