@@ -17,12 +17,12 @@ for (let i=0; i<markers.length; i++) {
     })
 }
 
-for (const markerCard of markerCards) {
-    markerCard.addEventListener('click', function() {
-        markerCard.classList.add('hidden')
-        overlay.classList.add('hidden')
-    })
-}
+// for (const markerCard of markerCards) {
+//     markerCard.addEventListener('click', function() {
+//         markerCard.classList.add('hidden')
+//         overlay.classList.add('hidden')
+//     })
+// }
 
 overlay.addEventListener('click', hideModal)
 document.addEventListener('keydown', function(e) {

@@ -16,7 +16,7 @@
     <section id="main">
       <div class="container" style="background-image: url(images/gameboard.png);">
         <!-- MARKER 1 - MAGE -->
-        <div class="markers" tabindex="0" style="grid-column: 19; grid-row: 12;"></div>
+        <div class="markers" tabindex="0" style="grid-column: 20; grid-row: 12;"></div>
         <div class="marker__card hidden">
           <!-- Mage title -->
           <h1 class="title">Mage - Lymphocyte</h1>
@@ -49,12 +49,12 @@
             <p><img src="images/warrior-sword.png" class="skill-image" alt="warrior-skill"><span>Violently "<strong>engulfs and digests</strong> (phagocytosis)" nearby pathogens with its blade. Pathogens are located as phagocytes can detect can detect chemicals produced by pathogenic cells.</span></p>
             <!-- skill 2 - antitoxins -->
             <h3 class="card-text" style="color: #50f750;">Cast: Recycle</h3>
-            <p><img src="images/warrior-recycle.png" class="skill-image" alt="warrior-skill"><span>*Less violently "engulfs and digests" <strong>dead or damaged</strong> troops preventing the release of cellular debris and other harmful substances that can damage surrounding tissues and lead to inflammation. </span></p>
+            <p><img src="images/warrior-recycle.png" class="skill-image" alt="warrior-skill"><span>*Less violently "engulfs and digests" <strong>dead or damaged</strong> cells preventing the release of cellular debris and other harmful substances that can damage surrounding tissues and lead to inflammation. </span></p>
           </div>
         </div>
 
         <!-- MARKER 3 -  -->
-        <div class="markers" tabindex="0" style="grid-column: 25; grid-row: 27;"></div>
+        <div class="markers" tabindex="0" style="grid-column: 26; grid-row: 27;"></div>
         <div class="marker__card hidden">
           <!-- Archmage title -->
           <h2 class="title">Archmage - memory cells</h2>
@@ -64,7 +64,12 @@
             <p>(totally not just a larger mage)</p>
             <!-- Archmage skills -->
             <h4 class="card-text">Skills:</h4>
-            <p>Same as normal mage</p>
+            <!-- skill 1 - antibodies -->
+            <h3 class="card-text" style="color: #50f750;">Cast: Spawn</h3>
+            <p><img src="images/mage-antibody.png" class="skill-image" alt="mage-skill"><span>Secretes antibodies, which have a complementary shape to the antigens on the surface of the pathogenic cell. They bind to the antigens and cause them to <strong>clump together</strong> (agglutination).</span></p>
+            <!-- skill 2 - antitoxins -->
+            <h3 class="card-text" style="color: #50f750;">Cast: Relief</h3>
+            <p><img src="images/mage-antitoxin.png" class="skill-image" alt="mage-skill"><span>Antitoxins <strong>neutralise toxins</strong> released by pathogens. These toxins can disrupt normal cellular processes, cause damage to cells and tissues.</span></p>
             <!-- Archmage passives -->
             <h4 class="card-text">Passives:</h4>
             <h3 class="card-text" style="color: #50f750;">Memory</h3>
@@ -72,18 +77,126 @@
           </div>
         </div>
 
-        <!-- MARKER 4 -  -->
-        <div class="markers" tabindex="0" style="grid-column: 34; grid-row: 29;"></div>
+         <!-- MARKER 5 -  -->
+         <div class="markers" tabindex="0" style="grid-column: 77; grid-row: 49;"></div>
+         <div class="marker__card hidden">
+           <!-- Pathogens title -->
+           <h1 class="title">Other Pathogens</h1>
+           <img src="images/icons/icDanger.png" class="icons" alt="archmage-icon">
+
+           <div class="card-main">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h2>Variant: Slime protoctist</h2>
+                  <img src="images/slime.gif" class="d-bloc image" alt="protoctist">
+                  <p>chubby</p>
+                </div>
+                <div class="carousel-item">
+                  <h2>Variant: Parasitic worm</h2>
+                  <img src="images/worm.gif" class="d-block image" alt="worm">
+                  <p>scary</p>
+                </div>
+                <div class="carousel-item">
+                  <h2>Variant: Fungus</h2>
+                  <img src="images/fungi.png" class="d-block image" alt="fungi">
+                  <p>weird and scary</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <h4>These pathogens can be harmful to humans too.</h4>
+           </div>
+         </div>
+
+         <!-- MARKER 6 -  -->
+        <div class="markers" tabindex="0" style="grid-column: 56; grid-row: 51;"></div>
+        <div class="marker__card hidden">
+          <!-- Goblin title -->
+          <h1 class="title">Goblin - bacteria</h1>
+          <img src="images/icons/icExplore.png" class="icons" alt="goblin-icon">
+          <div class="card-main">
+            <img src="images/goblin.png" class="image" alt="goblin">
+            <!-- Goblin skills -->
+            <h4 class="card-text">Skills:</h4>
+            <h3 class="card-text" style="color: #fc1e1e;">Cast: Poison</h3>
+            <p><img src="images/goblin-poison.png" class="skill-image" alt="warrior-skill"><span>Secretes toxins which greatly inhibit cells and can cause bacterial infections. Manipulate host cell functions and takes over the control of vital processes.  </span></p>
+            <!-- Goblin passives -->
+            <h4 class="card-text">Passives:</h4>
+            <h3 class="card-text" style="color: #fc1e1e;">Resist</h3>
+            <p><img src="images/goblin-shield.png" class="skill-image" alt="archmage-skill"><span>Overuse and misuse of antibiotics can lead to the evolution of antibiotic-resistant bacteria, making it difficult to treat infections.</span></p>
+          </div>
+        </div>
+
+        <!-- MARKER 7 -  -->
+        <div class="markers" tabindex="0" style="grid-column: 88; grid-row: 47;"></div>
+        <div class="marker__card hidden">
+          <!-- Ghoul title -->
+          <h1 class="title">Ghoul - virus</h1>
+          <img src="images/icons/icPrecision.png" class="icons" alt="ghoul-icon">
+          <div class="card-main">
+            <img src="images/ghoul.png" class="image" alt="goblin">
+            <!-- Ghoul skills -->
+            <h4 class="card-text">Skills:</h4>
+            <h3 class="card-text" style="color: #fc1e1e;">Cast: Hijack</h3>
+            <p><img src="images/goblin-poison.png" class="skill-image" alt="warrior-skill"><span>Corrupts nearby cells by injecting its genetic information into them. Causes them to <strong>function abnormally</strong> and can also lead to the release of new viral cells that can infect other cells..</span></p>
+            <!-- Ghoul passives -->
+            <h4 class="card-text">Passives:</h4>
+            <h3 class="card-text" style="color: #fc1e1e;">Virus</h3>
+            <p><img src="images/ghoul-ghost.png" class="skill-image" alt="archmage-skill"><span>Viruses are <strong>hard to kill</strong> because they are not considered living organisms. They lack cellular structures that can be targeted by antibiotics or other conventional medicines.</span></p>
+          </div>
+        </div>
+
+        <!-- STATUS EFFECTS -->
+        <!-- MARKER 8 -  -->
+        <div class="markers" tabindex="0" style="grid-column: 35; grid-row: 29;"></div>
         <div class="marker__card hidden">
           <!-- Hijacked title -->
           <h2 class="title">Hijacked</h2>
           <div class="card-main">
-            <img src="images/hijacked.png" class="image" alt="warrior">
-            <p>Troop has been infected by a Ghoul (virus)</p>
+            <img src="images/hijacked.png" class="image" alt="hijacked">
+            <p>Cell has been infected by a Ghoul (virus)</p>
             <!-- Hijacked effects -->
             <h4 class="card-text">Effects:</h4>
             <h3 class="card-text" style="color: #fc1e1e;">Hijacked</h3>
-            <p><img src="images/hijacked-virus.png" class="skill-image" alt="warrior-skill"><span>Hijacks the host troop's ability to <strong>replicate itself</strong>. This can cause the host to function abnormally or die, and can also lead to the release of new viral particles that can infect other cells.</span></p>
+            <p><img src="images/hijacked-virus.png" class="skill-image" alt="warrior-skill"><span>Hijacks the host cell's ability to <strong>replicate itself</strong>. This can cause the host to function abnormally or die, and can also lead to the release of new viral particles that can infect other cells.</span></p>
+          </div>
+        </div>
+
+        <!-- MARKER 9 -->
+        <div class="markers" tabindex="0" style="grid-column: 31; grid-row: 78;"></div>
+        <div class="marker__card hidden">
+          <!-- Poisoned title -->
+          <h2 class="title">Poisoned</h2>
+          <div class="card-main">
+            <img src="images/poisoned.png" class="image" alt="warrior">
+            <p>Cell has been infected by a Goblin (bacteria)</p>
+            <!-- Poisoned effects -->
+            <h4 class="card-text">Effects:</h4>
+            <h3 class="card-text" style="color: #fc1e1e;">Poisoned</h3>
+            <p><img src="images/poisoned-poison.png" class="skill-image" alt="warrior-skill"><span>Can lead to <strong>cell death or mutations</strong> that can result in diseases such as cancer. The severity of the effect of toxins on cells depends on factors such as the type of toxin, the dose, and the duration of exposure.</span></p>
+          </div>
+        </div>
+
+        <!-- MARKER 10 -->
+        <div class="markers" tabindex="0" style="grid-column: 56; grid-row: 81;"></div>
+        <div class="marker__card hidden">
+          <!-- Tagged title -->
+          <h2 class="title">Tagged</h2>
+          <div class="card-main">
+            <img src="images/antibody.png" class="image" alt="warrior">
+            <p>Cell has been tagged by an antibody released by mage/archmages (lymphocytes/memory cells)</p>
+            <!-- Tagged effects -->
+            <h4 class="card-text">Effects:</h4>
+            <h3 class="card-text" style="color: #50f750;">Tagged</h3>
+            <p><img src="images/antibody-slow.png" class="skill-image" alt="warrior-skill"><span>Antibodies coat the pathogen, making it <strong>easier for immune cells</strong> like phagocytes to recognize and engulf it. Furthermore, slows pathogens down.</span></p>
           </div>
         </div>
 
